@@ -1,0 +1,131 @@
+@font-face {
+  font-family: 'Bello Pro';
+  src: url('Bello-Pro.eot');
+  src: local('Bello Pro'), local('Bello-Pro'),
+    url('Bello-Pro.eot?#iefix') format('embedded-opentype'),
+    url('Bello-Pro.woff') format('woff'),
+    url('Bello-Pro.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+header {
+  background: url("../img/dreams.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 645px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  min-height: 80px;
+  margin: 0 auto;
+  width: 75%;
+  padding: 15px;
+}
+
+.brand, .link {
+  text-decoration: none;
+}
+
+.brand {
+  margin-right: auto;
+  color: #fff;
+  font-family: 'Bello Pro';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 36px;
+}
+
+.toggler {
+  display: none;
+  width: 32px;
+  background-color: transparent;
+  border: transparent;
+  text-align: center;
+  color: #fff;
+  font-size: 25px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  height: 50px;
+}
+
+.menu-item {
+  margin-right: 35px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.link {
+  color: #c1c1c1;
+}
+
+.link:hover {
+  color: #fff;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 125px;
+}
+
+.title h1 {
+  font-family: 'Montserrat';
+  font-size: 50px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 55px;
+}
+
+.title hr {
+  width: 110px;
+  height: 1px;
+  color: #36b9eb;
+  margin: 0 auto;
+}
+
+.title p {
+  color: #ccc;
+  font-family: 'Noto Sans';
+  font-size: 20px;
+  margin-top: 55px;
+  margin-bottom: 125px;
+}
+
+@media screen and (max-width: 992px) {
+  .navbar {
+    width: 100%;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .toggler {
+    display: inherit;
+  }
+}
+
+@media screen and (max-width: 767px) {}
