@@ -114,6 +114,57 @@ header {
   margin-bottom: 125px;
 }
 
+.services {
+  margin: 75px 145px;
+}
+
+.services h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-family: 'Montserrat';
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.services hr {
+  width: 110px;
+  border: 2px solid #78d6fa;
+  margin: 0 auto;
+  margin-bottom: 65px;
+}
+
+.s-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.s-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  min-height: 215px;
+  max-width: 310px;
+  padding: 5px;
+}
+
+.s-item i {
+  color: #ddd;
+  font-size: 55px;
+}
+
+.s-item h3 {
+  font-family: 'Montserrat';
+  text-transform: uppercase;
+}
+
+.s-item p {
+  font-family: 'Noto Sans';
+  font-size: 14px;
+  color: #888;
+  padding: 10px;
+}
+
 @media screen and (max-width: 992px) {
   .navbar {
     width: 100%;
@@ -128,4 +179,17 @@ header {
   }
 }
 
-@media screen and (max-width: 767px) {}
+@media screen and (max-width: 767px) {
+  .services {
+    margin: 30px 0;
+  }
+
+  .services hr {
+    margin-bottom: 30px;
+  }
+
+  .s-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
