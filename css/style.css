@@ -141,7 +141,7 @@ header {
 .s-item {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   text-align: center;
   min-height: 215px;
   max-width: 310px;
@@ -156,6 +156,7 @@ header {
 .s-item h3 {
   font-family: 'Montserrat';
   text-transform: uppercase;
+  margin-top: 10px;
 }
 
 .s-item p {
@@ -163,6 +164,124 @@ header {
   font-size: 14px;
   color: #888;
   padding: 10px;
+}
+
+.expert {
+  background: #f7f7f7;
+  height: 615px;
+  display: flex;
+}
+
+.text-content {
+  margin-top: 100px;
+  margin-left: 145px;
+  margin-bottom: 90px;
+  height: 425px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: "a a . ."
+    "b b b ."
+    "c c c c"
+    "c c c c"
+    "d . . ."
+}
+
+.text-content>h1 {
+  grid-area: a;
+  font-family: 'Montserrat';
+  font-size: 40px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.text-content>p {
+  font-family: 'Noto Sans';
+  font-size: 16px;
+  color: #888;
+  grid-area: b;
+}
+
+.text-content button {
+  grid-area: d;
+  width: 165px;
+  height: 60px;
+  border-radius: 30px;
+  border: 1px solid transparent;
+  background-color: #35c2f8;
+  color: #fff;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.text-content button:hover {
+  border: 1px solid #ceeefa;
+  background: #fff;
+  color: #000;
+}
+
+.media-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  grid-area: c;
+}
+
+.media {
+  display: flex;
+  width: 380px;
+  margin-right: 20px;
+}
+
+.media i {
+  font-size: 30px;
+  width: 35px;
+  height: 35px;
+  color: #7b7b7b;
+}
+
+.media-header {
+  color: #000;
+  font-family: 'Montserrat';
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.media p {
+  font-family: 'Noto Sans';
+  font-size: 14px;
+  color: #888;
+  margin-left: 10px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-areas: "a b c"
+    "d e f"
+}
+
+.gall-item-a {
+  grid-area: a;
+}
+
+.gall-item-b {
+  grid-area: b;
+}
+
+.gall-item-c {
+  grid-area: c;
+}
+
+.gall-item-d {
+  grid-area: d;
+}
+
+.gall-item-e {
+  grid-area: e;
+}
+
+.gall-item-f {
+  grid-area: f;
 }
 
 @media screen and (max-width: 992px) {
